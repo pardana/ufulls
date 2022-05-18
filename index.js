@@ -1,11 +1,21 @@
-let fname = 'Aditria';
-let lname = 'Putra';
-let age = prompt("Guest Aditria's age...");
+// function gretting(message){
+//     return alert(`${message} everyone!`)
+// }
 
-//old way
-// let result = fname + ' ' + lname + ' is ' + age + ' years old';
-// alert(result)
+// let gretting = (message) => alert(`${message} everyone!`)
 
-// using template string
-let result = `${fname} ${lname} is ${age} years old`;
-alert(result)
+// gretting('Good Morning');
+
+let createBlog = (title, body) => {
+    if(!title){
+        throw new Error('A title is required!');
+    }
+
+    if(!body){
+        throw new Error('Body cant be empty!');
+    }
+
+    return alert(`${title} - ${body}`)
+}
+
+createBlog('ada title', 'ada body');
