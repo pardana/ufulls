@@ -1,2 +1,4 @@
-let [, , mountain] = ['Slamet', 'Ranca Upas', 'Bromo'];
-console.log(mountain)
+var rivers = ['sunkoshi', 'tyamakoshi', 'saptakoshi'];
+var [first, ...last] = rivers;
+
+console.log(last)
