@@ -1,13 +1,9 @@
-let nepal = {
-    // add property
-    mountains: ['Everest', 'Fish Tail', 'Annapurna'],
+let uniStudent = ({name, university}) => {
+    
+    console.log(`${name} from ${university}`);
+};
 
-    // add method
-    printWithDash: function(){
-        setTimeout(() => 
-            console.log(this.mountains.join(" - "))
-        ,3000)
-    }
-}
-
-nepal.printWithDash();
+uniStudent({
+    name: 'Aditria',
+    university: 'STMIK Bani Saleh'
+});
